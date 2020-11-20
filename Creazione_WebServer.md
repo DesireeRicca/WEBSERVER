@@ -18,6 +18,12 @@ Per poter fare ciò ho dovuto eseguire dei passaggi come:
                 nameservers:
                     search: [mydomain, otherdomain]
                     addresses: [10.10.10.1, 1.1.1.1]
+                    
+- Installo apache2: sudo apt install apache2
+- Creo un utente: sudo useradd -s /bin/bash -d /var/www/sitoA -m usersitoA
+- Imposto la password a sitoA: sudo passwd usersitoA
+- Configuro vsftp:
+
  
 
 
