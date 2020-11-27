@@ -1,5 +1,4 @@
-Il professore ci ha assegnato un lavoro e una macchina virtuale per poter svolgere il compito assegnatoci in laboratorio
-che coinsiste nel creare implementare un web server con host virtuali, associare ad ogni sito un utente separato e attivare
+Creare implementare un web server con host virtuali, associare ad ogni sito un utente separato e attivare
 il servizio FTP.
 
 Per poter fare ciò ho dovuto eseguire dei passaggi come:
