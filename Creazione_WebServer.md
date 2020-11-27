@@ -24,53 +24,53 @@ Per poter fare ciò ho dovuto eseguire dei passaggi come:
 - Installo vsftpd: sudo apt-get install vsftpd
 - Configuro vsftp: sudo nano /etc/vsftpd.conf
 - Una volta dentro configuro vsftp: 
-listen=yes
+*listen=yes
 
-listen_ipv6=NO
+*listen_ipv6=NO*
 
-anonymous_enable=NO
+*anonymous_enable=NO*
 
-local_enable=YES
+*local_enable=YES*
 
-write_enable=YES
+*write_enable=YES*
 
-local_umask=022
+*local_umask=022*
 
-dirmessage_enable=YES
+*dirmessage_enable=YES*
 
-use_localtime=YES
+*use_localtime=YES*
 
-xferlog_enable=YES
+*xferlog_enable=YES*
 
-connect_from_port_20=YES
+*connect_from_port_20=YES*
 
-xferlog_file=/var/log/vsftpd.log
+*xferlog_file=/var/log/vsftpd.log*
 
-xferlog_std_format=YES
+*xferlog_std_format=YES*
 
-ftpd_banner=Welcome to our  FTP service.
+*ftpd_banner=Welcome to our  FTP service.*
 
-chroot_local_user=YES
+*chroot_local_user=YES*
 
-local_root=/var/www/$USER
+*local_root=/var/www/$USER*
 
-user_sub_token=$USER
+*user_sub_token=$USER*
 
-allow_writeable_chroot=YES
+*allow_writeable_chroot=YES*
 
-secure_chroot_dir=/var/run/vsftpd/empty
+*secure_chroot_dir=/var/run/vsftpd/empty*
 
-pam_service_name=vsftpd
+*pam_service_name=vsftpd*
 
-rsa_cert_file=/etc/ssl/certs/ssl-cert-snakeoil.pem
+*rsa_cert_file=/etc/ssl/certs/ssl-cert-snakeoil.pem*
 
-rsa_private_key_file=/etc/ssl/private/ssl-cert-snakeoil.key
+*rsa_private_key_file=/etc/ssl/private/ssl-cert-snakeoil.key*
 
-ssl_enable=NO
+*ssl_enable=NO*
 
-session_support=YES
+*session_support=YES*
 
-log_ftp_protocol=YES
+*log_ftp_protocol=YES*
 
 
 Una volta configurato il tutto apriamo FileZilla e verifichiamo se possiamo creare una cartella, se funziona tutto senza dare problemi si sono eseguti corettamente i passaggi.
