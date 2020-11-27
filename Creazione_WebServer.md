@@ -7,16 +7,16 @@ Per poter fare ciò ho dovuto eseguire dei passaggi come:
 - impostarsi come root: $sudo -i
 - Installare l'shh: $sudo apt intsall openshh-server
 - Imposto l'indirizzo ip: nano /etc/netplan/ una volta dentro lo imposto
-          network:
-            version: 2
-            renderer: networkd
-            ethernets:
-              eth1:
-                addresses: [10.10.10.2/24]
-                gateway4: 10.10.10.1
-                nameservers:
-                    search: [mydomain, otherdomain]
-                    addresses: [10.10.10.1, 1.1.1.1]
+          - network:
+            - version: 2
+            - renderer: networkd
+            - ethernets:
+              - eth1:
+                - addresses: [10.10.10.2/24]
+                - gateway4: 10.10.10.1
+                - nameservers:
+                    - search: [mydomain, otherdomain]
+                    - addresses: [10.10.10.1, 1.1.1.1]
                     
 - Installo apache2: sudo apt install apache2
 - Creo un utente: sudo useradd -s /bin/bash -d /var/www/sitoA -m usersitoA
