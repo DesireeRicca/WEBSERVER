@@ -1,5 +1,5 @@
-Creare implementare un web server con host virtuali, associare ad ogni sito un utente separato e attivare
-il  servizio FTP.
+**Creare implementare un web server con host virtuali, associare ad ogni sito un utente separato e attivare
+il  servizio FTP.**
 
 Per poter fare ciò ho dovuto eseguire dei passaggi come:
 
@@ -7,9 +7,9 @@ Per poter fare ciò ho dovuto eseguire dei passaggi come:
 - impostarsi come root: $sudo -i
 - Installare l'shh: $sudo apt intsall openshh-server
 - Imposto l'indirizzo ip: nano /etc/netplan/ una volta dentro lo imposto
-           - network:
-            - version: 2
-            - renderer: networkd
+- network:
+    - version: 2
+       - renderer: networkd
             - ethernets:
               - eth1:
                 - addresses: [10.10.10.2/24]
@@ -24,6 +24,7 @@ Per poter fare ciò ho dovuto eseguire dei passaggi come:
 - Installo vsftpd: sudo apt-get install vsftpd
 - Configuro vsftp: sudo nano /etc/vsftpd.conf
 - Una volta dentro configuro vsftp: 
+
 *listen=yes
 
 *listen_ipv6=NO*
@@ -71,7 +72,6 @@ Per poter fare ciò ho dovuto eseguire dei passaggi come:
 *session_support=YES*
 
 *log_ftp_protocol=YES*
-
 
 Una volta configurato il tutto apriamo FileZilla e verifichiamo se possiamo creare una cartella, se funziona tutto senza dare problemi si sono eseguti corettamente i passaggi.
 
