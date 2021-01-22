@@ -3,10 +3,10 @@ il  servizio FTP.
 
 Per poter fare ciò ho dovuto eseguire dei passaggi come:
 
-🟣 Accedere alla macchina
-🟣 impostarsi come root: $sudo -i
-🟣 Installare l'shh: $sudo apt intsall openshh-server
-🟣 Imposto l'indirizzo ip: nano /etc/netplan/ una volta dentro lo imposto
+- Accedere alla macchina
+- impostarsi come root: $sudo -i
+- Installare l'shh: $sudo apt intsall openshh-server
+- Imposto l'indirizzo ip: nano /etc/netplan/ una volta dentro lo imposto
            - network:
             - version: 2
             - renderer: networkd
@@ -18,12 +18,12 @@ Per poter fare ciò ho dovuto eseguire dei passaggi come:
                     - search: [mydomain, otherdomain]
                     - addresses: [10.10.10.1, 1.1.1.1]
                     
-🟣 Installo apache2: sudo apt install apache2
-🟣 Creo un utente: sudo useradd -s /bin/bash -d /var/www/sitoA -m usersitoA
-🟣 Imposto la password a sitoA: sudo passwd usersitoA
-🟣 Installo vsftpd: sudo apt-get install vsftpd
-🟣 Configuro vsftp: sudo nano /etc/vsftpd.conf
-🟣 Una volta dentro configuro vsftp: 
+- Installo apache2: sudo apt install apache2
+- Creo un utente: sudo useradd -s /bin/bash -d /var/www/sitoA -m usersitoA
+- Imposto la password a sitoA: sudo passwd usersitoA
+- Installo vsftpd: sudo apt-get install vsftpd
+- Configuro vsftp: sudo nano /etc/vsftpd.conf
+- Una volta dentro configuro vsftp: 
 *listen=yes
 
 *listen_ipv6=NO*
