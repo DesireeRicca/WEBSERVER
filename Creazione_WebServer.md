@@ -7,8 +7,8 @@ Per poter fare ciò ho dovuto eseguire dei passaggi come:
 - impostarsi come root: $sudo -i
 - Installare l'shh: $sudo apt intsall openshh-server
 - Imposto l'indirizzo ip: nano /etc/netplan/ una volta dentro lo imposto
-- network:
-    - version: 2
+   - network:
+     - version: 2
        - renderer: networkd
             - ethernets:
               - eth1:
